@@ -18,7 +18,6 @@ const inventory = {
 const invokeInventoryAction = function(itemName, action) {
   console.log(`Invoking action on ${itemName}`);
   action.call(inventory, itemName);
-  // action(itemName);
 };
 
 invokeInventoryAction("Medkit", inventory.add);
